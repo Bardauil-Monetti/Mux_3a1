@@ -8,8 +8,8 @@ int main (void){
         mux1.entradas[i].pin = i + 1;
     }
     for(int i = 0; i < 2; i++){
-        mux1.selectoras[0].puerto = GPIOB;
-        mux1.selectoras[0].pin = 8 + i;
+        mux1.selectoras[i].puerto = GPIOB;
+        mux1.selectoras[i].pin = 8 + i;
     }
     mux1.salida.puerto = GPIOC;
     mux1.salida.pin = 13;
